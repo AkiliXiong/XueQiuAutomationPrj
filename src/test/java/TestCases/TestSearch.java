@@ -9,9 +9,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import Pages.*;
 
-public class Search extends BaseTest {
+public class TestSearch extends BaseTest {
 
-    static Logger logsearch = LogManager.getLogger(Search.class.getCanonicalName());
+    static Logger logsearch = LogManager.getLogger(TestSearch.class.getCanonicalName());
 
     @Test
     public void searchStocks() {
