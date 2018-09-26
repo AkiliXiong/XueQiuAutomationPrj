@@ -20,7 +20,9 @@ public class FirstPage {
     }
 
     public void doSearch() {
-        clickCancelButton();
+        if(driver.findElements(cancelBtn).size()>0) {
+            clickCancelButton();
+        }
         driver.findElement(searchBox).click();
     }
 }
