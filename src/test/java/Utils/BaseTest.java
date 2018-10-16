@@ -30,10 +30,11 @@ public class BaseTest {
         capabilities.setCapability("appPackage","com.xueqiu.android");
         capabilities.setCapability("appActivity",".view.WelcomeActivityAlias");
         capabilities.setCapability("noReset","false");
+        //capabilities.setCapability("fullReset","true");
         capabilities.setCapability("printPageSourceOnFindFailure","true");
         capabilities.setCapability("unicodeKeyboard","true");
         driver = new AppiumDriver<WebElement>(service.getUrl(),capabilities);
-        driver.manage().timeouts().implicitlyWait(12,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         logbase.trace("The driver is started.");
     }
 
